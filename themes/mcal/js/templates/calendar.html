@@ -1,0 +1,33 @@
+<button class="btn btn-primary" prev><span class="icon-chevron-left icon-white"></span><%= date.clone().add('months',-1).format('MMMM')%></button>
+<div class="table-container">
+    <h2><%= date.format('MMMM YYYY')%></h2>
+    <table class="calendar-table">
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <% var currentMonth = date.format('MM');
+        var dayIterator = from.clone();
+        while(dayIterator<=to){
+            if(dayIterator.format('d')==1 && dayIterator!=from){%>
+        </tr>
+            <% } else if(dayIterator.format('d')==1){%>
+        <tr>
+            <% } %>
+            <td<%= (currentMonth == dayIterator.format('MM')) ? ' class="current-month"' : ''%>>
+                <%= templateDay({
+                    date: dayIterator.clone(),
+                    dayModel: days.getDayModel(dayIterator)
+                })%>
+            </td>
+        <% dayIterator.add('day',1);
+        }%>
+        </tr>
+    </table>
+</div>
+<button class="btn btn-primary" next><%= date.clone().add('months',1).format('MMMM')%><span class="icon-chevron-right icon-white"></span></button>

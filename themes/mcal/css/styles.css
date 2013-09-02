@@ -1,0 +1,94 @@
+#page {
+    padding-top: 60px;
+}
+#calendar_container{
+    margin:0 0 20px;
+    overflow: hidden;
+}
+#calendar_container h2{
+    text-align: center;
+}
+#calendar_container .btn{
+    float:left;
+    position: relative;
+    top:60px;
+    width: 120px;
+}
+.table-container {
+    float:left;
+    margin:0 10px;
+}
+.calendar-table th,
+.calendar-table td{
+    border:1px solid #bbb;
+}
+.calendar-table td{
+    background: #fdfdfd;
+}
+.calendar-table td .date{
+    font-size:24px;
+    line-height: 24px;
+    display: block;
+    text-align: center;
+}
+.calendar-table td.current-month{
+    background: white;
+}
+.day {
+    width:80px;
+    height:80px;
+    overflow: hidden;
+}
+.day .flags {
+    margin:0;
+    list-style: none;
+    font-size:31px;
+    font-weight: bold;
+}
+.day:hover .flags{
+    font-size:18px;
+}
+.day .flags .flagX{
+    color:red;
+}
+.day .flags .flagZ{
+    color:purple;
+}
+.day .flags .flagO{
+    color:darkgreen;
+}
+.day .flags .flagOX{
+    color:magenta;
+    font-weight: normal;
+    letter-spacing: -15px;
+}
+.day:hover .flags .flagOX{
+    letter-spacing: -9px;
+}
+.day .flags li {
+    float:left;
+    margin-left:8px;
+}
+.day .flags li > span{
+    display:none;
+    cursor: pointer;
+    min-width:25px;
+}
+.day:hover .flags li > span,
+.day .flags li > span.checked{
+    display:inline-block;
+}
+.day:hover .flags li > span:before {
+    content:"";
+    width:14px;
+    height:14px;
+    border:1px solid black;
+    display:inline-block;
+    margin-right: 1px;
+    position: relative;
+    top: 3px;
+}
+/* in bootstrap/yii.css
+.day:hover .flags li > span.checked:before {
+    background:black url('../img/glyphicons-halflings-white.png') -288px 0 no-repeat;
+}*/
