@@ -3807,3 +3807,75 @@ in F:\mcal\index.php (13)
 2013/09/01 19:21:42 [warning] [application] Failed to set unsafe attribute "user_id" of "Day".
 in F:\mcal\protected\controllers\DaysController.php (41)
 in F:\mcal\index.php (13)
+2013/09/02 14:33:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in F:\mcal\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\mcal\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 F:\mcal\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 F:\mcal\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/02 14:33:55 [warning] [application] Failed to set unsafe attribute "id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 14:33:55 [warning] [application] Failed to set unsafe attribute "user_id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:56:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in F:\mcal\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\mcal\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 F:\mcal\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 F:\mcal\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/02 18:56:49 [warning] [application] Failed to set unsafe attribute "id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:56:49 [warning] [application] Failed to set unsafe attribute "user_id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:56:55 [warning] [application] Failed to set unsafe attribute "id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:56:55 [warning] [application] Failed to set unsafe attribute "user_id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:56:57 [warning] [application] Failed to set unsafe attribute "id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:56:57 [warning] [application] Failed to set unsafe attribute "user_id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:56:58 [warning] [application] Failed to set unsafe attribute "id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:56:58 [warning] [application] Failed to set unsafe attribute "user_id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:57:02 [warning] [application] Failed to set unsafe attribute "id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (14)
+in F:\mcal\index.php (13)
+2013/09/02 18:57:02 [warning] [application] Failed to set unsafe attribute "user_id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (14)
+in F:\mcal\index.php (13)
+2013/09/02 18:57:03 [warning] [application] Failed to set unsafe attribute "id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:57:03 [warning] [application] Failed to set unsafe attribute "user_id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:57:04 [warning] [application] Failed to set unsafe attribute "id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:57:04 [warning] [application] Failed to set unsafe attribute "user_id" of "Day".
+in F:\mcal\protected\controllers\DaysController.php (41)
+in F:\mcal\index.php (13)
+2013/09/02 18:57:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in F:\mcal\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\mcal\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 F:\mcal\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 F:\mcal\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

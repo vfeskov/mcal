@@ -50,7 +50,7 @@ var CalendarView = Backbone.View.extend({
         var flagname = 'flag'+$this.attr('flag').toUpperCase();
         dayModel.attributes[flagname] = ($this.hasClass('checked')) ? 1 : 0;
         if(dayModel.isNoFlags()){
-            dayModel.clone().destroy({
+            dayModel.sync('delete',dayModel,{
                 success:function(){
                     $this.removeClass('checked');
                     dayModel.id = null;
