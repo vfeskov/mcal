@@ -4,14 +4,9 @@
 /* @var $form CActiveForm  */
 
 $this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
 ?>
 
 <h1>Login</h1>
-
-<p><?php echo CHtml::link('Register',array('site/register')) ?></p>
 
 <div class="form">
 
@@ -23,8 +18,6 @@ $this->breadcrumbs=array(
 		'validateOnSubmit'=>true,
 	),
 )); ?>
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->textFieldRow($model,'username'); ?>
 

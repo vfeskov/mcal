@@ -102,6 +102,13 @@ class SiteController extends Controller
         $this->render('register',array('model'=>$model));
     }
 
+    public function actionStats(){
+        if(Yii::app()->user->isGuest){
+            $this->redirect(array('site/login'));
+        }
+        $this->render('stats');
+    }
+
     /**
      * Logs out the current user and redirect to homepage.
      */

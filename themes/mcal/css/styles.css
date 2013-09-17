@@ -3,20 +3,25 @@
 }
 #calendar_container{
     margin:0 0 20px;
-    overflow: hidden;
+}
+#calendar_container .month-nav {
+    position:relative;
 }
 #calendar_container h2{
     text-align: center;
 }
 #calendar_container .btn{
-    float:left;
-    position: relative;
-    top:60px;
+    position: absolute;
+    top: 5px;
     width: 120px;
+    right: 0px;
+}
+#calendar_container .month-nav .btn:nth-child(1){
+    right:auto;
+    left:0px;
 }
 .table-container {
-    float:left;
-    margin:0 10px;
+    width:582px;
 }
 .calendar-table th,
 .calendar-table td{
@@ -79,6 +84,12 @@
     display:inline-block;
 }
 .day:hover .flags li > span:before {
+    opacity:0.6;
+}
+.day .flags li > span.checked:before{
+    opacity:1;
+}
+.day:hover .flags li > span:before {
     content:"";
     width:14px;
     height:14px;
@@ -92,3 +103,7 @@
 .day:hover .flags li > span.checked:before {
     background:black url('../img/glyphicons-halflings-white.png') -288px 0 no-repeat;
 }*/
+
+label .required{
+    display:none;
+}
