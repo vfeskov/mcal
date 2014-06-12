@@ -51,7 +51,7 @@ return array(
             ),
         ),
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=mcal',
+			'connectionString' => 'mysql:host=localhost;dbname=mcal.vladimirfeskov.com',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
