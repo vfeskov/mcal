@@ -62,22 +62,25 @@
 .day .flags .flagO{
     color:darkgreen;
 }
-.day .flags .flagOX{
-    color:magenta;
-    font-weight: normal;
-    letter-spacing: -15px;
-}
-.day.active .flags .flagOX{
-    letter-spacing: -9px;
-}
 .day .flags li {
     float:left;
-    margin-left:8px;
+    margin-left:10px;
+}
+.day.active .flags li {
+    margin-left:3px;
 }
 .day .flags li > span{
     display:none;
     cursor: pointer;
     min-width:25px;
+}
+.day img{
+    width:25px;
+    height:25px;
+}
+.day.active img{
+    width:20px;
+    height:20px;
 }
 .day.active .flags li > span,
 .day .flags li > span.checked{
