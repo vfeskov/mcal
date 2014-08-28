@@ -1,3 +1,5 @@
 assets
 protected/runtime
 .idea
+protected/config/main.php
+
