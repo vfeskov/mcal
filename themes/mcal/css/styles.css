@@ -75,12 +75,12 @@
     min-width:25px;
 }
 .day img{
-    width:25px;
-    height:25px;
+    max-width:25px;
+    max-height:25px;
 }
 .day.active img{
-    width:20px;
-    height:20px;
+    max-width:20px;
+    max-height:20px;
 }
 .day.active .flags li > span,
 .day .flags li > span.checked{
