@@ -50,7 +50,7 @@
     font-size:31px;
     font-weight: bold;
 }
-.day:hover .flags{
+.day.active .flags{
     font-size:18px;
 }
 .day .flags .flagX{
@@ -67,7 +67,7 @@
     font-weight: normal;
     letter-spacing: -15px;
 }
-.day:hover .flags .flagOX{
+.day.active .flags .flagOX{
     letter-spacing: -9px;
 }
 .day .flags li {
@@ -79,17 +79,17 @@
     cursor: pointer;
     min-width:25px;
 }
-.day:hover .flags li > span,
+.day.active .flags li > span,
 .day .flags li > span.checked{
     display:inline-block;
 }
-.day:hover .flags li > span:before {
+.day.active .flags li > span:before {
     opacity:0.6;
 }
 .day .flags li > span.checked:before{
     opacity:1;
 }
-.day:hover .flags li > span:before {
+.day.active .flags li > span:before {
     content:"";
     width:14px;
     height:14px;
@@ -100,7 +100,7 @@
     top: 3px;
 }
 /* in bootstrap/yii.css
-.day:hover .flags li > span.checked:before {
+.day.active .flags li > span.checked:before {
     background:black url('../img/glyphicons-halflings-white.png') -288px 0 no-repeat;
 }*/
 

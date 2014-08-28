@@ -5,7 +5,8 @@ var CalendarView = Backbone.View.extend({
         this.templateDay = _.template( $("#calendar_day").html() );
     },
     events: {
-        'click span[flag]': 'setFlag',
+        'click .day': 'setActive',
+        'click .active span[flag]': 'setFlag',
         'click button[prev]': 'prev',
         'click button[next]': 'next'
     },
@@ -41,9 +42,20 @@ var CalendarView = Backbone.View.extend({
             to: this.to
         }));
     },
+    setActive: function(e){
+        var $this=$(e.target);
+        if(!$this.hasClass('.day')){
+            $this = $this.closest('.day');
+        }
+        if(!$this.hasClass('active')){
+            $('.day').removeClass('active');
+            $this.addClass('active');
+        }
+    },
     setFlag: function(e){
         var $this=$(e.target);
         $this.toggleClass('checked');
+        e.stopPropagation();
         var $day = $this.closest('.day');
         var cid = $day.attr('cid');
         var dayModel = this.collection.get(cid);
